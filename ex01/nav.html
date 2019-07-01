@@ -13,12 +13,9 @@
         ul{
             text-align: center;
             background-color: tomato;
-            height: 50px;
         }
         li{
             margin: 11px;
-            /* background-color: yellow; */
-            display: inline-block;
             color: white;
         }
         a{
@@ -27,15 +24,23 @@
             font-size: 16px;
             font-weight: 600;
         }
+        @media(max-width:500px){
+            li{
+                display: block;
+            }
+            ul{
+                height: 200px;
+            }
+        }
     </style>
 </head>
 <body>
     <ul>
         <li><a href="#">Home</a></li>
-        <li><a href="#"></a>HTML</li>
-        <li><a href="#"></a>CSS</li>
-        <li><a href="#"></a>React</li>
-        <li><a href="#"></a>Django</li>
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">React</a></li>
+        <li><a href="#">Django</a></li>
     </ul>
 </body>
 </html>
