@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+            * {
+                margin: 0px;
+                padding: 0px;
+                box-sizing: border-box;
+            }
+    
+            body {
+                background-color: lightgrey;
+            }
+    
+            h2 {
+                color: lightcoral;
+            }
+    
+            .header, p {
+                padding: 10px 0;
+            }
+    
+            input {
+                background-color: tomato;
+                color: white;
+                padding: 5px 20px;
+            }
+    
+            .container {
+                width:700px;
+                margin: 0 auto;
+                text-align: center;
+            }
+    
+            .grid-container {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: 20px;
+            }
+    
+            .a {
+                display: inline-block;
+                position: relative;
+            }
+    
+            .text {
+                position: absolute;
+                color: white;
+                top: 80px;
+                font-size: 20px;
+                width: 100%;
+            }
+        </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Meet Guidebooks</h2>
+            <p>Discover hundreds of local spots recommended by Airbnb hosts</p>
+        </div>
+        <div class="grid-container">
+            <div class="a">
+                <div class="text">San Francisco</div>
+                <img src="images/images1.jpg" height="200px" width="100%" /> 
+
+            </div>
+            <div class="a">
+                <div class="text">New York</div>
+                <img src="images/images2.jpg" height="200px" width="100%" />
+            </div>
+            <div class="a">
+                <div class="text">London</div>
+                <img src="images/images3.jpg" height="200px" width="100%" />
+            </div>
+        </div>
+        <p><input type="button" value="See All Guidebooks" /> </p>
+
+        <div class="header">
+            <h2>Just for the weekend</h2>
+            <p>Discover new, inspiring places close to home.</p>
+        </div>
+        <div class="grid-container">
+
+            <div class="a">
+                <div class="text">Napa</div>
+                <img src="images/images4.jpg"" height="200px" width="100%" />
+            </div>
+            <div class="a">
+                <div class="text">Sonoma</div>
+                <img src="images/images5.jpg" height="200px" width="100%" />
+            </div>
+            <div class="a">
+                <div class="text">San Francisco</div>
+                <img src="images/images6.jpg"" height="200px" width="100%" />
+            </div>
+        </div>
+        <p><input type="button" value="See All Destinations" /> </p>
+    </div>
+</body>
+
+</html>
